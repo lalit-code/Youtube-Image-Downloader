@@ -1,4 +1,4 @@
-# Youtube-Image-Downloader
+# Youtube Thumbnail Downloader
 
 <p align="center"><img src="Screenshot 2023-09-11 004002.png" height=400px /></p>
 
