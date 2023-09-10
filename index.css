@@ -1,0 +1,171 @@
+*, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page{
+    background-color: rgb(93, 39, 228);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+.ytbox{
+    background-color: white;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgb(53, 44, 125);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    animation: shad 2s infinite alternate;
+}
+
+
+@keyframes shad {
+    0% { box-shadow: 3px 3px 15px rgb(53, 44, 125); }
+    100% { box-shadow: 3px 3px 35px rgb(37, 29, 97); }
+}
+
+.appname-div{
+text-align: center;
+color: rgb(93, 39, 228);;
+}
+
+.searchbar-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.searchbar-div input{
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 80%;
+    outline: rgb(154, 149, 149);
+}
+
+.searchbar-div .btn{
+    text-align: center;
+    color: white;
+    background-color: rgb(122, 79, 230);
+    padding: 10px;
+    border-radius: 20px;
+    width: 60%;
+    cursor: pointer;
+ }
+
+ .searchbar-div .btn:hover{
+    box-shadow: 1px 1px 5px rgb(125, 114, 207);
+    background-color: rgb(93, 39, 228);
+ }
+
+ .ytbox .image-div{
+    height: 230px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+ }
+
+.ytbox .image-div .img-box{
+    background-color: rgb(209, 250, 255);
+    height: 100%;
+    border: 2px dashed blueviolet;
+    background-image: url('https://i.giphy.com/media/13Nc3xlO1kGg3S/200w.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.download-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.ytbox .download-div .dbtn{
+   text-align: center;
+   color: white;
+   background-color: rgb(122, 79, 230);
+   padding: 10px;
+   border-radius: 20px;
+   width: 60%;
+   cursor: pointer;
+   display: none;
+}
+
+.ytbox .download-div .dbtn:hover{
+    box-shadow: 1px 1px 5px rgb(125, 114, 207);
+    background-color: rgb(93, 39, 228);
+ }
+
+ .github{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        animation: mover 1s infinite alternate;
+ }
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+
+
+ 
+
+
+
+
+
+
+
+ @media only screen and (max-width: 450px) {
+    .ytbox{
+        width: 90%;
+        padding: 40px;
+        
+    }
+
+    .appname-div{
+    font-size: 12px;
+        }
+
+        .searchbar-div input{
+            padding: 12px;
+            width: 100%;
+        }
+
+
+        .ytbox .image-div{
+            height: 200px;
+            width: 100%;
+            margin-top: 20px;
+         }
+        .ytbox .image-div .img-box{
+            height: 80%;
+ 
+        }
+
+        .download-div{
+
+            padding: 0px;
+            
+        }
+
+    .github{
+        display: none;
+     }
+  }
